@@ -8,3 +8,4 @@ git pull
 chmod +x deploy.sh
 bundle install --path vendor/bundle
 bundle exec rails assets:precompile RAILS_ENV=production
+sudo systemctl restart nginx
