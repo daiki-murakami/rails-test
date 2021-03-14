@@ -21,9 +21,8 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - 83:35:36:55:59:61:1f:0d:2e:08:6b:d1:01:a1:01:37
-      - run: echo $SSH_PORT
-      - run: echo $SSH_USER
-      - run: echo $SSH_HOST
+      - run: pwd
+      - run: ls ~/key
       - run: ssh -p $SSH_PORT $SSH_USER@$SSH_HOST "/var/www/projects/rails-test/deploy.sh"
 workflows:
   version: 2
