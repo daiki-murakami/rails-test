@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -l
+set -Ceu
 
 cd /var/www/projects/rails-test
 git pull
