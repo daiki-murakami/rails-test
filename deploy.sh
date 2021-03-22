@@ -6,7 +6,7 @@ bundle install --path vendor/bundle
 bundle exec rails assets:precompile RAILS_ENV=production
 
 # unicorn再起動処理
-pid=`cat /tmp/unicorn.pid`
+pid=`cat /tmp/pids/unicorn.pid`
 
 kill -s USR2 $pid
 sleep 3
